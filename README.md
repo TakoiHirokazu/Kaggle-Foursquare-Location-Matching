@@ -31,10 +31,11 @@ Please run the following notebooks.
         ``` ./CPU/fe/fe035_near100_feature.ipynb ```</br>
         ``` ./CPU/fe/fe042_near100_feature.ipynb ```
     - Train</br>
-     ```./CPU/exp/ex037_stage1_fold_0_1.ipynb ```</br>
-            - For evaluation with train data
-      ``` ./CPU/exp/ex073_stage1_all.ipynb ``` </br>
-            - For submission
+        ```./CPU/exp/ex037_stage1_fold_0_1.ipynb ```</br>
+         For evaluation with train data
+        
+        ``` ./CPU/exp/ex073_stage1_all.ipynb ``` </br>
+        For submission</br>
 - Create candidate pairs using name
     - Feature engineering
         - ./GPU/fe/fe029_foursquare_bert-base-multilingual-uncased.ipynb
