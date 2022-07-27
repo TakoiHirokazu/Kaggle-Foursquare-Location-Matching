@@ -27,9 +27,9 @@ $ docker-compose up --build
 ## 1st Stage
 Please run the following notebooks.
 - Create candidate pairs using latitude and longitude
-    - Feature engineering
-        - ./CPU/fe/fe035_near100_feature.ipynb
-        - ./CPU/fe/fe042_near100_feature.ipynb
+    - Feature engineering</br>
+        ``` ./CPU/fe/fe035_near100_feature.ipynb ```
+        ``` ./CPU/fe/fe042_near100_feature.ipynb ```
     - Train
         - ./CPU/exp/ex037_stage1_fold_0_1.ipynb
             - For evaluation with train data
