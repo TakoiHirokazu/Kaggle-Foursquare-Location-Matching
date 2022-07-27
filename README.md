@@ -28,12 +28,12 @@ $ docker-compose up --build
 Please run the following notebooks.
 - Create candidate pairs using latitude and longitude
     - Feature engineering</br>
-        ``` ./CPU/fe/fe035_near100_feature.ipynb ```
+        ``` ./CPU/fe/fe035_near100_feature.ipynb ```</br>
         ``` ./CPU/fe/fe042_near100_feature.ipynb ```
-    - Train
-        - ./CPU/exp/ex037_stage1_fold_0_1.ipynb
+    - Train</br>
+     ```./CPU/exp/ex037_stage1_fold_0_1.ipynb ```</br>
             - For evaluation with train data
-        - ./CPU/exp/ex073_stage1_all.ipynb
+      ``` ./CPU/exp/ex073_stage1_all.ipynb ``` </br>
             - For submission
 - Create candidate pairs using name
     - Feature engineering
