@@ -10,12 +10,12 @@ I used two different machines.
 1. Google Cloud Platform
 - Debian 10.12
 - n1-standard-64 (vCPU x 64, memory 240 GB)
-- Ran the code on CPU/
+- Ran the code in CPU/
 2. Google Cloud Platform
 - Debian 10.12
 - a2-highgpu-1g (vCPU x 12, memory 85 GB)
 - 1 x NVIDIA Tesla A100
-- Ran the code on GPU/
+- Ran the code in GPU/
 
 ## Data download
 Plese download data to `./CPU/data` and `./GPU/data` from https://www.kaggle.com/competitions/foursquare-location-matching/data and unzip it.
