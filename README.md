@@ -25,7 +25,7 @@ $ docker-compose up --build
 
 ### Our code consists of 4 stages. Please run the code.
 For those that need to be uploaded to kaggle dataset to be used for submission, I have marked them as submission.</br>
- As for Train, note that there is one for evaluation with train data and one for submission. The evaluation version is trained with cross validation (fold = 2), and the submission version is trained with all data.
+ As for Train, note that there is one for evaluation with train data and one for submission. The evaluation version is trained with cross validation (n_splits = 2), and the submission version is trained with all data.
 ## 1st Stage
 - Create candidate pairs using latitude and longitude
     - Feature engineering</br>
@@ -92,13 +92,16 @@ For those that need to be uploaded to kaggle dataset to be used for submission, 
     Plase copy ```"./CPU/output/exp/ex062/ex062_pred.csv"``` to ```"./GPU/output/exp/ex062/ex062_pred.csv"``` and copy ```"./CPU/output/exp/ex062/ex062_fe.csv"``` to ```"./GPU/output/exp/ex062/ex062_fe.csv"``` and copy ```"./CPU/output/exp/ex063/ex063_pred.csv"``` to ```"./GPU/output/exp/ex063/ex063_pred.csv"``` and copy ```"./CPU/output/exp/ex063/ex063_fe.csv"``` to ```"./GPU/output/exp/ex063/ex063_fe.csv"```.
 
 ## 3rd stage
-In the 3rd stage, I only trained with fold0 or all data. 3rd stage was validated using fold0 only.
+In the 3rd stage, I only trained fold0 and all data. 3rd stage was validated using fold0 only.
 - Train Catboost </br>
     fold 0</br> 
     ```./CPU/exp/exp087_2nd_stage_catboost.ipynb```</br>
 
     all data </br>
     ```./CPU/exp/exp090_2nd_stage_catboost_all.ipynb``` (submission)</br>
+
+    Plase copy ```"./CPU/output/exp/ex087/ex087_pred.csv"``` to ```"./GPU/output/exp/ex087/ex087_pred.csv"```
+
 
 - Train xlm-roberta-large </br>
     fold 0</br>
@@ -115,7 +118,27 @@ In the 3rd stage, I only trained with fold0 or all data. 3rd stage was validated
     ```./GPU/exp/exp115_mdeberta_fgm_ema_all.ipynb.ipynb``` (submission)</br>
 
 ## 4th stage
-In the 4th stage, I only trained with fold0 or all data. 3rd stage was validated using fold0 only.
+In the 4th stage, I only trained fold0 and all data. 4th stage was validated using fold0 only.
+- Train xlm-roberta-large </br>
+    fold 0 </br>
+    ```./GPU/exp/exp070_roberta_large_fold0.ipynb```
+
+    all data </br>
+    ```./GPU/exp/exp101_roberta_large_all.ipynb``` (submission)
+
+- Ensemble + PostProcess</br>
+    ```./GPU/exp/exp113[ensemble_pp].ipynb```</br>
+         I used the weight of the ensemble in my submission.
+    
+    ```./GPU/exp/exp113[pp_inference]_roberta_large_fold0.ipynb```</br>
+
+    ```./GPU/exp/exp113[pp_final]_pp_pred.ipynb```</br>
+        I used this notebook's threshold as a reference for the submission threshold.
+
+
+
+
+
 
 
 
