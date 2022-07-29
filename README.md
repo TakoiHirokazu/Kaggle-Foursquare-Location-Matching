@@ -4,7 +4,7 @@ The discription of this solution is available [here](https://www.kaggle.com/comp
 The prediction notebook in the competition is available [here](https://www.kaggle.com/code/takoihiraokazu/sub-ex73-74-75-ex104-115-90-101-merge-train3).
 
 ## Summary
-
+![4square_pipeline](https://user-images.githubusercontent.com/30746280/181665406-b3d50412-e287-462f-8f1d-1f3bd4581d8a.jpg)
 ## Hardware
 I used two different machines.
 1. Google Cloud Platform
