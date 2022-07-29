@@ -10,9 +10,12 @@ I used two different machines.
 1. Google Cloud Platform
 - Debian 10.12
 - n1-standard-64 (vCPU x 64, memory 240 GB)
-- This machine ran the code on CPU/
+- Ran the code on CPU/
 2. Google Cloud Platform
-- 
+- Debian 10.12
+- a2-highgpu-1g (vCPU x 12, memory 85 GB)
+- 1 x NVIDIA Tesla A100
+- Ran the code on GPU/
 
 ## Data download
 Plese download data to `./CPU/data` and `./GPU/data` from https://www.kaggle.com/competitions/foursquare-location-matching/data and unzip it.
@@ -95,10 +98,10 @@ For those that need to be uploaded to kaggle dataset to be used for submission, 
 In the 3rd stage, I only trained fold0 and all data. 3rd stage was validated using fold0 only.
 - Train Catboost </br>
     fold 0</br> 
-    ```./CPU/exp/exp087_2nd_stage_catboost.ipynb```</br>
+    ```./CPU/exp/exp087_3rd_stage_catboost.ipynb```</br>
 
     all data </br>
-    ```./CPU/exp/exp090_2nd_stage_catboost_all.ipynb``` (submission)</br>
+    ```./CPU/exp/exp090_3rd_stage_catboost_all.ipynb``` (submission)</br>
 
     Plase copy ```"./CPU/output/exp/ex087/ex087_pred.csv"``` to ```"./GPU/output/exp/ex087/ex087_pred.csv"```
 
